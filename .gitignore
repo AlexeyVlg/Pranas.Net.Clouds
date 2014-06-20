@@ -1,0 +1,5 @@
+/packages/RestSharp.104.4.0
+/packages/NLog.2.1.0
+bin
+obj
+*.suo

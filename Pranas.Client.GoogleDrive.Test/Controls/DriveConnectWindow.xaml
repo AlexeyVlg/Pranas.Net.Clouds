@@ -1,0 +1,64 @@
+﻿<Window x:Class="Pranas.Client.GoogleDrive.Test.Controls.DriveConnectWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"
+        WindowStartupLocation="CenterOwner" ShowInTaskbar="False"
+        Title="Connect to Google Drive"
+        Width="530" SizeToContent="Height"
+        DataContext="{StaticResource DriveDataModel}">
+    <Grid Margin="4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Column="0" Grid.Row="1" Orientation="Vertical" Margin="0,4,0,4">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Column="0" Grid.Row="0" Text="User name:" VerticalAlignment="Center" />
+                <TextBlock Grid.Column="1" Grid.Row="0" Text="{Binding Path=DriveAbout.Name}" Margin="4,4,0,4" VerticalAlignment="Center" />
+                <TextBlock Grid.Column="0" Grid.Row="1" Text="Access Code:" VerticalAlignment="Center" />
+                <Grid Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <TextBox x:Name="AccessCodeTextBox" Grid.Column="0" Grid.Row="0" TextWrapping="NoWrap" HorizontalAlignment="Stretch"
+                             VerticalAlignment="Center" Margin="4,4,0,4"/>
+                    <Button Grid.Column="1" Grid.Row="0" Content="..." Padding="4,0,4,0" Margin="0,4,4,4"
+                            Click="OpenConnectionPageButtonClick"/>
+                </Grid>
+            </Grid>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="OpenConnectionPageButton" Content="Open Auth Page" Style="{StaticResource LinkButton}" Margin="4"
+                        Click="OpenConnectionPageButtonClick"/>
+                <Button x:Name="PasteAccessCodeButton" Content="Paste Access Code" Style="{StaticResource LinkButton}" Margin="4"
+                        Click="PasteAccessCodeButtonClick"/>
+            </StackPanel>
+        </StackPanel>
+
+        <Border Grid.Column="0" Grid.Row="2" BorderThickness="0,1,0,0" BorderBrush="MidnightBlue">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="ConnectButton" Content="Connect" Margin="4" Padding="6,2,6,2" IsDefault="True"
+                        Click="ConnectButtonClick"/>
+                <Button Content="Cancel" Margin="4" Padding="6,2,6,2" IsCancel="True" />
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Window>
