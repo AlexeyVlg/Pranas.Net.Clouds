@@ -1,6 +1,6 @@
 ﻿using Net.Pranas.Client.GoogleDrive.Business.Auth;
 
-namespace Pranas.Client.GoogleDrive.Test.Resources
+namespace Pranas.Client.GoogleDrive.Demo.Resources
 {
     internal class DriveAuthData : IDriveAuthData
     {

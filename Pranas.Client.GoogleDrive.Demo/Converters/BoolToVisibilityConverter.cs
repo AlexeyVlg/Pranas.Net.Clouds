@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
 
-namespace Pranas.Client.GoogleDrive.Test.Converters
+namespace Pranas.Client.GoogleDrive.Demo.Converters
 {
     /// <summary>
     /// Represents converter a boolen value into visibility value.

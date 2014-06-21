@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{13BCF4
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pranas.Client.GoogleDrive.Test", "Pranas.Client.GoogleDrive.Test\Pranas.Client.GoogleDrive.Test.csproj", "{0D9EC629-89D7-4628-9BFA-02A683ED99CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pranas.Client.GoogleDrive.Demo", "Pranas.Client.GoogleDrive.Demo\Pranas.Client.GoogleDrive.Demo.csproj", "{0D9EC629-89D7-4628-9BFA-02A683ED99CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

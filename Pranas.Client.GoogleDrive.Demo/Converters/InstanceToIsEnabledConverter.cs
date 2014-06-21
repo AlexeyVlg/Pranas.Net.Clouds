@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Windows.Data;
 
-namespace Pranas.Client.GoogleDrive.Test.Converters
+namespace Pranas.Client.GoogleDrive.Demo.Converters
 {
     public class InstanceToIsEnabledConverter : IValueConverter
     {

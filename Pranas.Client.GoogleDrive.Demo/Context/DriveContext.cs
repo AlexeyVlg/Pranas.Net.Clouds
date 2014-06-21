@@ -2,15 +2,15 @@
 using Net.Pranas.Client.GoogleDrive.Business.Auth;
 using Net.Pranas.Client.GoogleDrive.Business.Interaction;
 using Net.Pranas.Client.GoogleDrive.Business.Model;
-using Pranas.Client.GoogleDrive.Test.Resources;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Pranas.Client.GoogleDrive.Demo.Resources;
 
-namespace Pranas.Client.GoogleDrive.Test.Context
+namespace Pranas.Client.GoogleDrive.Demo.Context
 {
     /// <summary>
     /// Represens Google Drive context.

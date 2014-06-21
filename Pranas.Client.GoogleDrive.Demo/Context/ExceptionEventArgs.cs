@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Pranas.Client.GoogleDrive.Test.Context
+namespace Pranas.Client.GoogleDrive.Demo.Context
 {
     /// <summary>
     /// Represents arguments of an exception event.

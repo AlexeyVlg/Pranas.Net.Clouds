@@ -1,15 +1,15 @@
 ﻿using Microsoft.Win32;
 using Net.Pranas.Client.GoogleDrive.Business.Auth;
-using Pranas.Client.GoogleDrive.Test.Context;
-using Pranas.Client.GoogleDrive.Test.Controls;
-using Pranas.Client.GoogleDrive.Test.Resources;
+using Pranas.Client.GoogleDrive.Demo.Context;
+using Pranas.Client.GoogleDrive.Demo.Controls;
 using System;
 using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks;
 using System.Windows;
+using Pranas.Client.GoogleDrive.Demo.Resources;
 
-namespace Pranas.Client.GoogleDrive.Test
+namespace Pranas.Client.GoogleDrive.Demo
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

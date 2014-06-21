@@ -1,13 +1,13 @@
 ﻿using Net.Pranas.Client.GoogleDrive.Business.Auth;
 using Net.Pranas.Client.GoogleDrive.Business.Interaction;
-using Pranas.Client.GoogleDrive.Test.Context;
-using Pranas.Client.GoogleDrive.Test.Resources;
+using Pranas.Client.GoogleDrive.Demo.Context;
 using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Windows;
+using Pranas.Client.GoogleDrive.Demo.Resources;
 
-namespace Pranas.Client.GoogleDrive.Test.Controls
+namespace Pranas.Client.GoogleDrive.Demo.Controls
 {
     /// <summary>
     /// Interaction logic for DriveConnectWindow.xaml

@@ -1,7 +1,7 @@
-﻿<Window x:Class="Pranas.Client.GoogleDrive.Test.MainWindow"
+﻿<Window x:Class="Pranas.Client.GoogleDrive.Demo.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:converters="clr-namespace:Pranas.Client.GoogleDrive.Test.Converters"
+        xmlns:converters1="clr-namespace:Pranas.Client.GoogleDrive.Demo.Converters"
         WindowStartupLocation="CenterScreen"
         Title="Google Drive Test App"
         Height="600" Width="800" SizeToContent="Height"
@@ -9,8 +9,8 @@
         DataContext="{StaticResource DriveDataModel}"
         Loaded="MainWindowLoaded">
     <Window.Resources>
-        <converters:InstanceToIsEnabledConverter x:Key="InstanceToIsEnabledConverter" />
-        <converters:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+        <converters1:InstanceToIsEnabledConverter x:Key="InstanceToIsEnabledConverter" />
+        <converters1:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
     </Window.Resources>
     <Grid Margin="2">
         <Grid.ColumnDefinitions>
