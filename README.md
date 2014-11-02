@@ -2,7 +2,7 @@ Pranas.Net.Clouds
 =================
 
 This is a lightweight library for working with files on Google Drive.
-It was orinially created for http://sqlbak.com service. The library can:
+It was originally created for http://sqlbak.com service. The library can:
 - Connect to Google Drive with OAuth
 - Get information about your Google Drive
 - List files and folders on Google Drive
