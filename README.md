@@ -75,7 +75,7 @@ Get a folder information
 DriveClient client = new DriveClient(new DriveAuthenticator(() => driveToken));
 DriveFileListRequest fileListRequest = new DriveFileListRequest
 {
-  Query = string.Format("mimeType = '{0}' and title = '{1}' and '{2}' in parents " and trashed = {3}",
+  Query = string.Format("mimeType = '{0}' and title = '{1}' and '{2}' in parents and trashed = {3}",
     DriveFolderShortInfo.FolderMimeType, "folder title", "parent/root folder id", false);
 };
 DriveResponse<DriveFileListInfo> fileListResponse = client.Execute(fileListRequest);
@@ -86,7 +86,7 @@ Get a file information
 DriveClient client = new DriveClient(new DriveAuthenticator(() => driveToken));
 DriveFileListRequest fileListRequest = new DriveFileListRequest
 {
-  Query = string.Format("mimeType != '{0}' and title = '{1}' and '{2}' in parents " and trashed = {3}",
+  Query = string.Format("mimeType != '{0}' and title = '{1}' and '{2}' in parents and trashed = {3}",
     DriveFolderShortInfo.FolderMimeType, "folder title", "parent/root folder id", false);
 };
 DriveResponse<DriveFileListInfo> fileListResponse = client.Execute(fileListRequest);
